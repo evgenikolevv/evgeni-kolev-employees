@@ -15,7 +15,6 @@ import java.util.concurrent.TimeUnit;
 public class PairTimeCalculator {
 
     public static Date[] getPeriod(Pair employees) {
-
         Date dateFrom;
         Date dateTo;
         Date[] period = new Date[2];
@@ -41,11 +40,10 @@ public class PairTimeCalculator {
     /**
      * Calculates the days worked together
      *
-     * @param employees Pair - двойка служители
+     * @param employees Pair - pair of employees
      * @return long days
      */
     public static Long getDays(Pair employees) {
-
         List<Date[]> dates = new ArrayList<>();
 
         for (Map.Entry<Project, Date[]> project : employees.getProjects().entrySet()) {
