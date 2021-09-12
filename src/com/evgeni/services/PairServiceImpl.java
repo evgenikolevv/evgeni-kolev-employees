@@ -15,8 +15,8 @@ public class PairServiceImpl implements PairService{
     /**
      * Creates pair of workers who have worked together on a project.
      *
-     * @param project   проект, по който employees са работили project
-     * @param employees List служители, които са работили по project e
+     * @param project   project on which employees have worked
+     * @param employees List of employees
      * @return pairs of workers
      */
     @Override
